@@ -16,19 +16,9 @@ body {
 }
 
 
-#header, #form{
+#form{
     margin: 0 1rem;
     min-height: 10vh;
-    width: 100%;
-}
-
-#header {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    font-size: 3rem;
-    min-height: 25vh;
     width: 100%;
 }
 
@@ -37,7 +27,7 @@ form {
     display: flex;
     font-size: 1.7rem;
     justify-content: center;
-    margin: 15px 0;
+    margin: 0.8rem 0;
     padding: 0.8rem;
     width: 100%;
 }

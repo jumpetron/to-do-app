@@ -21,6 +21,7 @@ function addToDo(event) {
 
     // Create li
     const newToDo = document.createElement('li');
+
     if (toDoInput.value === '') {
             alert("You must write something!");
         } 
@@ -35,12 +36,14 @@ function addToDo(event) {
 
         // check btn;
         const checked = document.createElement('button');
+
         checked.innerHTML = '<i class="fas fa-check"></i>';
         checked.classList.add('check-btn');
         toDoDiv.appendChild(checked);
 
         // delete btn;
         const deleted = document.createElement('button');
+
         deleted.innerHTML = '<i class="fas fa-trash"></i>';
         deleted.classList.add('delete-btn');
         toDoDiv.appendChild(deleted);
@@ -67,7 +70,7 @@ function deleteAndcheck(event){
         //removing local storage todos
         removeFromLocalStorage(item.parentElement);
 
-        item.parentElement.addEventListener('transitionend', function(){
+        item.parentElement.addEventListener('transitionend', ()=>{
             item.parentElement.remove();
         })
     }
